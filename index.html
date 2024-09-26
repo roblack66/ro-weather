@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Search Section -->
+        <header>
+            <h1>Weather Finder</h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+        <!-- Weather Details Section -->
+        <section class="weather-info">
+            <div class="location">
+                <h2 id="city-name">City Name</h2>
+                <p id="date">Date & Time</p>
+            </div>
+            <div class="weather-details">
+                <div class="temp">
+                    <h1 id="temperature">--°C</h1>
+                    <p id="weather-description">Clear Sky</p>
+                </div>
+                <div class="additional-info">
+                    <div class="info">
+                        <h3>Humidity</h3>
+                        <p id="humidity">--%</p>
+                    </div>
+                    <div class="info">
+                        <h3>Wind</h3>
+                        <p id="wind-speed">-- km/h</p>
+                    </div>
+                    <div class="info">
+                        <h3>Pressure</h3>
+                        <p id="pressure">-- hPa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./scripts/weather.js"></script>
+</body>
+
+</html>
