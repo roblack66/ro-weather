@@ -4,7 +4,7 @@ async function fetchWeatherData(city) {
     
     try {
         // First, get the latitude and longitude of the city using geocoding
-        const geoResponse = await fetch(apiUrl, { headers: { 'User-Agent': 'WeatherApp/1.0 (your-email@example.com)' } });
+        const geoResponse = await fetch(apiUrl, { headers: { 'User-Agent': 'WeatherApp/1.0 (romeoasante66@gmail.com)' } });
         if (!geoResponse.ok) {
             throw new Error('City not found');
         }
@@ -61,3 +61,6 @@ document.getElementById('search-btn').addEventListener('click', () => {
         alert('Please enter a city name');
     }
 });
+
+
+
